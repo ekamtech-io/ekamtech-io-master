@@ -3,7 +3,13 @@
 		max-width: 100vw;
 		overflow-x: hidden;
 }
-
+section {
+    padding-top: 72px;
+    margin-top: -72px;
+}
+html {
+	scroll-behavior: smooth;
+}
 /* Container */
 @media (min-width: 1440px) {
 		.container {
@@ -30,7 +36,7 @@
 
 /* Font Size */
 .custom-font-size-1 {
-		font-size: clamp(28px, 4px + 0.05 * 100vw, 64px);
+		font-size: clamp(28px, 4px + 0.05 * 100vw, 32px);
 		line-height: 1.1;
 }
 
@@ -270,6 +276,9 @@
 		.custom-grid-1 .container .row > * {
 				border: 1px solid var(--grey-100);
 		}
+		.empty-box{
+			display: none;
+		}
 }
 
 @media (min-width: 992px) {
@@ -388,4 +397,8 @@
 /* Footer */
 #footer {
 		margin-top: -70px;
+}
+
+.link-like {
+	cursor: pointer;
 }
